@@ -1,0 +1,196 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.adopthero {
+    width: 100%;
+    color:black;
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add some padding for spacing */   
+    font-family: "Play", sans-serif;
+    font-weight: 900;
+    color: rgb(230, 153, 21);
+  }
+  .adopthero h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .quote{
+    width: 60%;
+  }
+  .play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .shape{
+    float:right;
+    width:800px;
+    position: relative;
+    top: -500px;
+    left: 300px;
+    z-index: -1;
+  }
+  .aintro{
+    border:solid rgb(0, 0, 0) 1px;
+    border-radius: 10px;
+    width: 600px;
+    height:300px;
+    margin-top: 80px;
+    justify-items:right;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    margin-left: 50px;
+    background-color: rgba(254, 206, 47, 0.354);
+  }
+  @media (max-width:800px){
+    .aintro{
+      width: 90%;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-left: 10px;
+      height:auto;
+    }
+    .aquote{
+      width:90%;
+      text-align:center;
+    }
+    .petadoptlist{
+      top:50px;
+    }
+  }
+  .aintro img{
+    border-radius: 20px;
+    width: 40%;
+    margin: 20px;
+    flex-shrink: 0;
+    border:solid rgb(254,206,47) 2px;
+  }
+  .aquote {
+    padding-left:5%;
+    display: inline;
+    width: 50%;
+    height:auto;
+    text-align: left;
+    color: black;
+  }
+  .aquote p span{
+    color: red;
+  }
+  @media (max-width:1100px){
+    .adopthero h1{
+      color: black;
+    }
+  }
+  .petadoptlist{
+    width:100%;
+    height:1700px;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    top:600px;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-top: 5%;
+  }
+  .card{
+    background-color:rgb(254,206,47);
+    width:350px;
+    height:350px;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin-left:20px;
+    margin-bottom:20px ;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Play", sans-serif;
+  }
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+  .dimage{
+    width:100%;
+    height:50%;
+    border: solid rgb(254,206,47) 3px;
+    box-sizing: border-box;
+  }
+  .dimage img{
+    width:100%;
+    border-radius: 10px;
+    height:100%
+  }
+  .info{
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+    color: rgb(255, 0, 0);
+  }
+  .info1{
+    width:50%;
+    height:auto;
+    float: left;
+  }
+  .info2{
+    width:50%;
+    height:auto;
+    float: left;
+  }
+  .des{
+    margin-left: 10px;
+    color: rgb(255, 0, 0);
+  }
+  .card span{
+    color: rgba(0, 0, 0, 0.623);
+  }
+.adiv-container {
+    position: fixed;
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    border: solid black 1px;
+    z-index: 10;
+}
+.abox{
+  display: none;
+  position: fixed;
+    width: 400px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(254,206,47);
+    border: solid rgb(255, 255, 255) 1px;
+    box-shadow: -15px 0 10px -5px rgba(255, 255, 255, 0.7), 0 15px 10px -5px rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    z-index: 99;
+}
+.exit{
+  z-index: 200;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.clickinfo{
+  cursor: pointer;
+}
+
+  
+
